@@ -20,20 +20,7 @@
   </script>
   
   <div class="min-h-screen bg-black p-5 font-mono text-green-400">
-    <div class="boot-sequence fixed inset-0 bg-black p-5 z-50">
-      <div class="boot-line opacity-0">
-        Initializing market terminal...
-      </div>
-      <div class="boot-line opacity-0">
-        Loading comprehensive data...
-      </div>
-      <div class="boot-line opacity-0">
-        Processing market analysis...
-      </div>
-      <div class="boot-line opacity-0">
-        READY
-      </div>
-    </div>
+
   
     <div class="max-w-7xl mx-auto">
       <div class="border-b border-green-400 pb-3 mb-5">
@@ -231,37 +218,7 @@
   </div>
   
   <style>
-    /* Boot sequence animations, havent decided if I want to remove them or not*/
-    .boot-sequence {
-      animation: bootFade 2s forwards;
-    }
-  
-    .boot-line {
-      height: 1.5em;
-      position: relative;
-    }
-  
-    .boot-line:before {
-      content: "> ";
-    }
-  
-    .boot-line:nth-child(1) { animation: typeLine 0.3s 0.1s forwards; }
-    .boot-line:nth-child(2) { animation: typeLine 0.3s 0.5s forwards; }
-    .boot-line:nth-child(3) { animation: typeLine 0.3s 0.9s forwards; }
-    .boot-line:nth-child(4) { animation: typeLine 0.2s 1.3s forwards; }
-  
-    @keyframes typeLine {
-      0% { opacity: 0; width: 0; }
-      1% { opacity: 1; width: 0; }
-      100% { opacity: 1; width: 100%; }
-    }
-  
-    @keyframes bootFade {
-      0%, 90% { opacity: 1; }
-      100% { opacity: 0; pointer-events: none; }
-    }
-  
-   
+    
   .font-mono {
     font-family: 'VT323', monospace;
     font-size: 1.25rem;
